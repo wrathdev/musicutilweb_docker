@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="{{url_for('static',filename='base.css')}}">
+    <link rel="stylesheet" href="static/base.css">
 
     <title> {% block title %} MusicUtil {% endblock title %} </title>
     {% endblock head %}
@@ -44,7 +44,7 @@
         <div class="navbar navbar-dark default-color-dark shadow-sm">
             <div class="container d-flex justify-content-between">
                 <a href="/" class="navbar-brand d-flex align-items-center">
-                    <img width="20px" height="20px" src="{{ url_for('static', filename='icon.svg') }}">
+                    <img width="20px" height="20px" src="static/icon.svg">
                     <strong>&nbsp;MusicUtil</strong>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader"
@@ -84,7 +84,7 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-    <script src="{{ url_for('static', filename='base.js') }}"></script> 
+    <script src="static/base.js"></script> 
 
     <script type="text/javascript">
         var csrf_token = "{{ csrf_token() }}";
