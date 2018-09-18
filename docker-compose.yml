@@ -2,7 +2,7 @@ version: '3'
 
 services:
 
-  dash_app:
+  musicutilweb:
     container_name: musicutilweb
     restart: always
     build: ./musicutilweb
