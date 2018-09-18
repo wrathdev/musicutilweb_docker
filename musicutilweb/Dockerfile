@@ -10,13 +10,11 @@ RUN mkdir -p /home/project/musicutilweb
 WORKDIR /home/project/musicutilweb
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Remove SSH keys
-RUN rm -rf /root/.ssh/
 
 COPY . /home/project/musicutilweb
 
-EXPOSE 80
+EXPOSE 8000
 
-CMD ["python", "-m", "gunicorn ", "-b :80", "manage:app"]
+
 
 
